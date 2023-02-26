@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Teams(models.Model):
+class Team(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     desgination = models.CharField(max_length=100)
@@ -10,3 +10,4 @@ class Teams(models.Model):
     facebook_link = models.URLField(max_length=95)
     twiter_link = models.URLField(max_length=80)
     created_date = models.DateTimeField(auto_now_add=True)
+    google_plus_link = models.URLField(max_length=85)
