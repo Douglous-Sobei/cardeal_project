@@ -8,6 +8,10 @@ class Team(models.Model):
     desgination = models.CharField(max_length=100)
     image = models.ImageField(upload_to="images/%Y/%m/%d")
     facebook_link = models.URLField(max_length=95)
-    twiter_link = models.URLField(max_length=80)
+    twitter_link = models.URLField(max_length=80)
     created_date = models.DateTimeField(auto_now_add=True)
     google_plus_link = models.URLField(max_length=85)
+
+    def __str__(self):
+        return self.first_name
+    
