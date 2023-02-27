@@ -80,7 +80,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "cardeal_db",
         "USER": "postgres",
-        "PASSWORD": "SOBEI",
+        "PASSWORD": config("POSTGRES_PASSWORD"),
         "HOST": "localhost",
     }
 }
