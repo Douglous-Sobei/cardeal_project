@@ -111,7 +111,7 @@ class Car(models.Model):
     fuel_type = models.CharField(max_length=30)
     no_of_owners = models.CharField(max_length=150)
     is_featured = models.BooleanField(default=False)
-    created_date = models.DateField(default=datetime.now, blank=True)
+    created_date = models.DateTimeField( blank=True, default=datetime.now)
 
     def __str__(self):
         return self.car_title
