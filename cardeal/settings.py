@@ -26,7 +26,7 @@ SECRET_KEY = config("secret_key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["cardeal.herokuapp.com", "cardealapp.co", "www.cardealapp.co"]
 
 LOGIN_REDIRECT_URL = "dashboard"
 
