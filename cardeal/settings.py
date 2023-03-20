@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from decouple import config
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("secret_key")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -89,17 +90,19 @@ WSGI_APPLICATION = "cardeal.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "cardeal_db",
+#         "USER": "postgres",
+#         "PASSWORD": config("POSTGRES_PASSWORD"),
+#         "HOST": "localhost",
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "cardeal_db",
-        "USER": "postgres",
-        "PASSWORD": config("POSTGRES_PASSWORD"),
-        "HOST": "localhost",
-    }
+    "default": dj_database_url.config(default="postgres://postgres:SOBEI@localhost/cardeal_db")
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -159,6 +162,8 @@ EMAIL_HOST_USER = "douglousmangoyi@gmail.com"
 EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
 EMAIL_USE_TLS = True
 
+# staticfiles storage.
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
