@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: guncorn cardeal.wsgi
+web: gunicorn cardeal.wsgi
