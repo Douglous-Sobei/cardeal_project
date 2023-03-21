@@ -27,7 +27,7 @@ def inquiry(request):
             if made_contact:
                 messages.error(
                     request, "You have already made an inquiry, we will get back to as soon as request is processed.")
-                return redirect("/cars"+car_id)
+                return redirect("/cars/"+car_id)
 
         contact = Contact(car_id=car_id, car_title=car_title, user_id=user_id,
                           first_name=first_name, last_name=last_name, customer_need=customer_need,
@@ -46,4 +46,4 @@ def inquiry(request):
         contact.save()
         messages.success(
             request, "Your message is successfully submitted, we will shortly get back to you.")
-        return redirect("/cars"+car_id)
+        return redirect("/cars/"+car_id)

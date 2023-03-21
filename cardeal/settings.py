@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 import os
-from decouple import config
-import dj_database_url
+# from decouple import config
+# import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,11 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("secret_key")
+SECRET_KEY = "_di-a!5^f-ny6e7(2y#sq^5aw(n+bu*#pl3ydcw@p5i=3-4ujn"
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["https://cardealers.herokuapp.com/"]
+ALLOWED_HOSTS = []
 
 LOGIN_REDIRECT_URL = "dashboard"
 
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
 
-    # Providers
+    # providers
     "allauth.socialaccount.providers.facebook",
     "allauth.socialaccount.providers.google",
 ]
@@ -78,7 +78,6 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "whitenoise.middleware.WhiteNoiseMiddleware",
             ],
         },
     },
@@ -90,19 +89,16 @@ WSGI_APPLICATION = "cardeal.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "cardeal_db",
-#         "USER": "postgres",
-#         "PASSWORD": config("POSTGRES_PASSWORD"),
-#         "HOST": "localhost",
-#     }
-# }
-
 DATABASES = {
-    "default": dj_database_url.config(default="postgres://postgres:SOBEI@localhost/cardeal_db")
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "cardeal_db",
+        "USER": "postgres",
+        "PASSWORD": "SOBEI",
+        "HOST": "localhost",
+    }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -140,7 +136,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'cardeal/static')
 ]
 
 # media settings
@@ -159,11 +155,11 @@ SITE_ID = 1
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "douglousmangoyi@gmail.com"
-EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
+EMAIL_HOST_PASSWORD = "cblceatctwnntong"
 EMAIL_USE_TLS = True
 
 # staticfiles storage.
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
