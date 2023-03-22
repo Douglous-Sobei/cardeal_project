@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from decouple import config
 import os
 import dj_database_url
 
@@ -21,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "_di-a!5^f-ny6e7(2y#sq^5aw(n+bu*#pl3ydcw@p5i=3-4ujn"
+SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 ALLOWED_HOSTS = ["blooming-hamlet-92814.herokuapp.com"]
@@ -98,7 +99,11 @@ WSGI_APPLICATION = "cardeal.wsgi.application"
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.config(default='postgres://postgres:SOBEI@localhost/cardeal_db')}
+DATABASES = {
+    'default': dj_database_url.config(
+        default=f"postgres://postgres:{config('DATABASE_PASSWORD')}@localhost/cardeal_db"
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -156,7 +161,7 @@ SITE_ID = 1
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "douglousmangoyi@gmail.com"
-EMAIL_HOST_PASSWORD = "cblceatctwnntong"
+EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
 EMAIL_USE_TLS = True
 
 # Whitenoise settings
