@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "_di-a!5^f-ny6e7(2y#sq^5aw(n+bu*#pl3ydcw@p5i=3-4ujn"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["blooming-hamlet-92814.herokuapp.com"]
 
 LOGIN_REDIRECT_URL = "dashboard"
 
