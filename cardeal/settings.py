@@ -24,7 +24,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "_di-a!5^f-ny6e7(2y#sq^5aw(n+bu*#pl3ydcw@p5i=3-4ujn"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = ["*"]
 
 LOGIN_REDIRECT_URL = "dashboard"
@@ -161,7 +160,7 @@ EMAIL_HOST_PASSWORD = "cblceatctwnntong"
 EMAIL_USE_TLS = True
 
 # Whitenoise settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
