@@ -1,0 +1,740 @@
+[
+{
+    "model": "contacts.contact",
+    "pk": 1,
+    "fields": {
+        "first_name": "Eugen",
+        "last_name": "Khaemba",
+        "email": "eugen@gmail.com",
+        "phone": "0700898732",
+        "car_id": 5,
+        "customer_need": "I'm interested in this",
+        "car_title": "2017 Ford Edge",
+        "city": "Mbita",
+        "state": "Mbita",
+        "message": "Would like us to have a talk",
+        "user_id": 0,
+        "created_date": "2023-03-21T08:28:35.144Z"
+    }
+},
+{
+    "model": "contacts.contact",
+    "pk": 2,
+    "fields": {
+        "first_name": "Reuben",
+        "last_name": "Sobei",
+        "email": "reubenosoro@gmail.com",
+        "phone": "0757447211",
+        "car_id": 2,
+        "customer_need": "I'm interested in this",
+        "car_title": "2017 Jaguar F-PACE",
+        "city": "Nairobi",
+        "state": "Nairobi",
+        "message": "I like this",
+        "user_id": 1,
+        "created_date": "2023-03-21T08:43:14.136Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "car_title": "2017 Ferrari 488 GTB",
+        "state": "KA",
+        "city": "Kitengela",
+        "color": "White",
+        "model": "488 GTB",
+        "year": 2017,
+        "condition": "Used",
+        "price": 18000,
+        "description": "<p>The 2017 Ferrari 488 GTB is a mid-engine sports car that was produced by the Italian car manufacturer Ferrari. It was first unveiled at the 2015 Geneva Motor Show as a successor to the Ferrari 458 Italia. The &quot;488&quot; in the car&#39;s name refers to the engine displacement of 488 cubic centimeters per cylinder.</p>\r\n\r\n<p>The Ferrari 488 GTB is powered by a 3.9-liter twin-turbocharged V8 engine that produces 660 horsepower and 560 lb-ft of torque. It has a seven-speed dual-clutch automatic transmission and rear-wheel drive. The car can accelerate from 0 to 60 mph in just 2.8 seconds and has a top speed of 205 mph.</p>\r\n\r\n<p>The 488 GTB features a sleek and aerodynamic design with a low, wide stance and sharp lines. It has a lightweight carbon fiber and aluminum chassis that contributes to its impressive performance capabilities. The interior is luxurious and features high-quality materials and advanced technology, including a touchscreen infotainment system and a digital instrument cluster.</p>\r\n\r\n<p>Overall, the 2017 Ferrari 488 GTB is a highly desirable and sought-after sports car that offers incredible performance, style, and luxury.</p>",
+        "car_image": "images/2023/03/21/1902536891.jpg",
+        "car_image_1": "images/2023/03/21/1902537077.jpg",
+        "car_image_2": "images/2023/03/21/1902537082.jpg",
+        "car_image_3": "images/2023/03/21/1902537043.jpg",
+        "car_image_4": "images/2023/03/21/1902536917.jpg",
+        "feature": "Air Conditioning,Seat Heating,ParkAssist,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Bluetooth Handset",
+        "body_style": "sport",
+        "engine": "3.9L Mild-Engine V8",
+        "transmission": "Automatic",
+        "interior": "Grey",
+        "miles": 12000,
+        "doors": "2",
+        "passengers": 2,
+        "vin_no": "WXPOJXC23AJ2I6L",
+        "milage": 2,
+        "fuel_type": "petrol",
+        "no_of_owners": "2",
+        "is_featured": true,
+        "created_date": "2023-03-21T04:37:00Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "car_title": "2017 Jaguar F-PACE",
+        "state": "BA",
+        "city": "Kabarnet",
+        "color": "Black",
+        "model": "F-PACE",
+        "year": 2017,
+        "condition": "Used",
+        "price": 46000,
+        "description": "<p>The 2017 Jaguar F-PACE is a luxury compact SUV that was first introduced by British car manufacturer Jaguar in 2015. It was the brand&#39;s first-ever SUV and quickly became a popular choice among luxury car buyers.</p>\r\n\r\n<p>The 2017 F-PACE comes with a choice of two engines: a 2.0-liter turbocharged four-cylinder engine that produces 247 horsepower and 269 lb-ft of torque, or a 3.0-liter supercharged V6 engine that produces 340 horsepower and 332 lb-ft of torque. Both engines are paired with an eight-speed automatic transmission and all-wheel drive.</p>\r\n\r\n<p>The F-PACE features a sleek and stylish design, with a distinctive front grille and sculpted lines that give it a sporty look. The interior is spacious and luxurious, with high-quality materials and advanced technology, including a touchscreen infotainment system and a digital instrument cluster.</p>\r\n\r\n<p>In terms of performance, the F-PACE is known for its agile handling and responsive steering, making it a fun SUV to drive. It has a comfortable ride and good fuel efficiency for its class, with an EPA-estimated 23 mpg combined for the four-cylinder engine and 20 mpg combined for the V6 engine.</p>\r\n\r\n<p>Overall, the 2017 Jaguar F-PACE is a great option for those seeking a luxury compact SUV that offers a balance of performance, style, and practicality.</p>",
+        "car_image": "images/2023/03/21/1902932542.jpg",
+        "car_image_1": "images/2023/03/21/1902932514.jpg",
+        "car_image_2": "images/2023/03/21/1902932503.jpg",
+        "car_image_3": "images/2023/03/21/1902932528.jpg",
+        "car_image_4": "images/2023/03/21/1902932542_BfuEDIN.jpg",
+        "feature": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,ParkAssist,Power Steering,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Wind Deflector,Bluetooth Handset",
+        "body_style": "Suv",
+        "engine": "2.0-liter turbocharged four-cylinder",
+        "transmission": "Automatic",
+        "interior": "Grey",
+        "miles": 13000,
+        "doors": "4",
+        "passengers": 5,
+        "vin_no": "PWPOa123AJ2I6L",
+        "milage": 2,
+        "fuel_type": "diesel",
+        "no_of_owners": "1",
+        "is_featured": true,
+        "created_date": "2023-03-21T04:43:32Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "car_title": "2018 Toyota 4Runner",
+        "state": "KU",
+        "city": "Kisumu",
+        "color": "White",
+        "model": "4Runner",
+        "year": 2018,
+        "condition": "Used",
+        "price": 20000,
+        "description": "<p>The 2018 Toyota 4Runner is a mid-size SUV that is known for its off-road capabilities and rugged design. It is part of the fifth generation of the 4Runner that was first introduced in 2010.</p>\r\n\r\n<p>The 4Runner is powered by a 4.0-liter V6 engine that produces 270 horsepower and 278 lb-ft of torque. It is paired with a five-speed automatic transmission and rear-wheel drive, although four-wheel drive is available as an option. The SUV has a towing capacity of up to 5,000 pounds.</p>\r\n\r\n<p>The exterior of the 2018 4Runner features a boxy and rugged design, with a high ground clearance and large wheel arches that contribute to its off-road capabilities. The interior is spacious and practical, with a large cargo area and optional third-row seating.</p>\r\n\r\n<p>In terms of off-road performance, the 4Runner is highly capable, with features such as a locking rear differential, a multi-terrain select system, and crawl control. It also has a high approach and departure angle, making it easier to navigate rough terrain.</p>\r\n\r\n<p>Overall, the 2018 Toyota 4Runner is a solid choice for those seeking a rugged and capable SUV that can handle off-road adventures while also providing practicality and comfort for everyday use.</p>\r\n\r\n<p>&nbsp;</p>",
+        "car_image": "images/2023/03/21/1893633875.jpg",
+        "car_image_1": "images/2023/03/21/1896836883.jpg",
+        "car_image_2": "images/2023/03/21/1893633884.jpg",
+        "car_image_3": "images/2023/03/21/1896836887.jpg",
+        "car_image_4": "images/2023/03/21/1893633879.jpg",
+        "feature": "Cruise Control,Seat Heating,Power Steering,Bluetooth Handset",
+        "body_style": "Suv",
+        "engine": "4.0-liter V6",
+        "transmission": "Manual",
+        "interior": "Grey",
+        "miles": 10000,
+        "doors": "3",
+        "passengers": 4,
+        "vin_no": "BWPOa123AJ2L12Z",
+        "milage": 3,
+        "fuel_type": "petrol",
+        "no_of_owners": "2",
+        "is_featured": false,
+        "created_date": "2023-03-21T04:49:46Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "car_title": "2018 Toyota Corolla",
+        "state": "KS",
+        "city": "Suneka",
+        "color": "White",
+        "model": "Corolla",
+        "year": 2018,
+        "condition": "Used",
+        "price": 19000,
+        "description": "<p>The 2018 Toyota Corolla is a compact car that is known for its reliability and fuel efficiency. It is part of the 11th generation of the Corolla that was first introduced in 2014.</p>\r\n\r\n<p>The Corolla is powered by a 1.8-liter four-cylinder engine that produces 132 horsepower and 128 lb-ft of torque. It is paired with a continuously variable automatic transmission (CVT) and front-wheel drive. The car has an EPA-estimated fuel economy rating of 28 mpg in the city and 36 mpg on the highway.</p>\r\n\r\n<p>The exterior of the 2018 Corolla features a modern and sleek design, with a distinctive front grille and sharp lines. The interior is spacious and comfortable, with a user-friendly infotainment system and supportive seats.</p>\r\n\r\n<p>In terms of safety features, the Corolla comes standard with Toyota Safety Sense P, which includes a pre-collision system with pedestrian detection, lane departure alert with steering assist, automatic high beams, and dynamic radar cruise control. This makes the Corolla one of the safest cars in its class.</p>\r\n\r\n<p>Overall, the 2018 Toyota Corolla is a practical and reliable compact car that is perfect for daily commuting and long-distance driving. Its fuel efficiency, safety features, and comfortable interior make it a popular choice among car buyers.</p>",
+        "car_image": "images/2023/03/21/1900893329.jpg",
+        "car_image_1": "images/2023/03/21/1900893299.jpg",
+        "car_image_2": "images/2023/03/21/1900893391.jpg",
+        "car_image_3": "images/2023/03/21/1900893319.jpg",
+        "car_image_4": "images/2023/03/21/1900893311.jpg",
+        "feature": "Air Conditioning,Alarm System,ParkAssist,Auto Start/Stop,Bluetooth Handset",
+        "body_style": "Suv",
+        "engine": "1.8-liter four-cylinder",
+        "transmission": "Automatic",
+        "interior": "Grey",
+        "miles": 8000,
+        "doors": "2",
+        "passengers": 3,
+        "vin_no": "BWPOa123AJLLGF",
+        "milage": 2,
+        "fuel_type": "petrol",
+        "no_of_owners": "1",
+        "is_featured": false,
+        "created_date": "2023-03-21T04:57:27Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+        "car_title": "2017 Ford Edge",
+        "state": "HO",
+        "city": "Mbita",
+        "color": "Black",
+        "model": "Edge",
+        "year": 2017,
+        "condition": "Used",
+        "price": 51000,
+        "description": "<p>The 2017 Ford Edge is a mid-size SUV that offers a comfortable ride, spacious interior, and advanced technology features. It is part of the second generation of the Edge that was first introduced in 2015.</p>\r\n\r\n<p>The Edge is powered by a choice of three engines: a 2.0-liter turbocharged four-cylinder engine that produces 245 horsepower and 275 lb-ft of torque, a 3.5-liter V6 engine that produces 280 horsepower and 250 lb-ft of torque, or a 2.7-liter twin-turbocharged V6 engine that produces 315 horsepower and 350 lb-ft of torque. All engines are paired with a six-speed automatic transmission and front-wheel drive, although all-wheel drive is available as an option.</p>\r\n\r\n<p>The exterior of the 2017 Edge features a modern and sleek design, with a large front grille and sculpted lines. The interior is spacious and comfortable, with ample legroom and headroom for both front and rear passengers. It also features a user-friendly infotainment system with Apple CarPlay and Android Auto compatibility.</p>\r\n\r\n<p>In terms of safety features, the Edge comes standard with a rearview camera and the Ford Co-Pilot360 suite of driver assistance technologies, which includes automatic emergency braking, blind spot monitoring, rear cross traffic alert, lane departure warning, and automatic high beams.</p>\r\n\r\n<p>Overall, the 2017 Ford Edge is a solid choice for those seeking a mid-size SUV that offers a balance of comfort, performance, and technology features. Its spacious interior, advanced safety features, and choice of engines make it a popular choice among car buyers.</p>",
+        "car_image": "images/2023/03/21/1901478646.jpg",
+        "car_image_1": "images/2023/03/21/1901478607.jpg",
+        "car_image_2": "images/2023/03/21/1901478672.jpg",
+        "car_image_3": "images/2023/03/21/1901478618.jpg",
+        "car_image_4": "images/2023/03/21/1901478687.jpg",
+        "feature": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,ParkAssist,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Wind Deflector,Bluetooth Handset",
+        "body_style": "Suv",
+        "engine": "2.0-liter turbocharged four-cylinder",
+        "transmission": "Automatic",
+        "interior": "Grey",
+        "miles": 11000,
+        "doors": "5",
+        "passengers": 6,
+        "vin_no": "BWPOa123AJ2I6L",
+        "milage": 3,
+        "fuel_type": "diesel",
+        "no_of_owners": "2",
+        "is_featured": true,
+        "created_date": "2023-03-21T05:06:21Z"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+        "car_title": "2017 Ford F-250 Super Duty",
+        "state": "BS",
+        "city": "Malaba",
+        "color": "Black",
+        "model": "Super Duty",
+        "year": 2017,
+        "condition": "Used",
+        "price": 47000,
+        "description": "<p>The 2017 Ford F-250 Super Duty is a heavy-duty pickup truck that is designed for tough jobs and heavy hauling. It is part of the third generation of the F-250 that was first introduced in 2017.</p>\r\n\r\n<p>The F-250 Super Duty is powered by a choice of two engines: a 6.2-liter V8 engine that produces 385 horsepower and 430 lb-ft of torque or a 6.7-liter turbocharged V8 diesel engine that produces 440 horsepower and 925 lb-ft of torque. Both engines are paired with a six-speed automatic transmission and rear-wheel drive, although four-wheel drive is available as an option.</p>\r\n\r\n<p>The exterior of the 2017 F-250 Super Duty features a bold and rugged design, with a large front grille and muscular body lines. The interior is spacious and comfortable, with a user-friendly infotainment system and a range of available features such as heated and ventilated seats and a premium audio system.</p>\r\n\r\n<p>In terms of towing and hauling capability, the F-250 Super Duty is highly capable. It has a maximum towing capacity of up to 18,600 pounds and a maximum payload capacity of up to 4,200 pounds.</p>\r\n\r\n<p>In terms of safety features, the F-250 Super Duty comes standard with a rearview camera and a range of available features such as adaptive cruise control, lane departure warning, and blind spot monitoring.</p>\r\n\r\n<p>Overall, the 2017 Ford F-250 Super Duty is a top choice for those seeking a heavy-duty pickup truck that can handle tough jobs and heavy hauling with ease. Its powerful engines, impressive towing and hauling capability, and range of available features make it a popular choice among truck buyers.</p>",
+        "car_image": "images/2023/03/21/1894300905.jpg",
+        "car_image_1": "images/2023/03/21/1894300894.jpg",
+        "car_image_2": "images/2023/03/21/1894300920.jpg",
+        "car_image_3": "images/2023/03/21/1900155133.jpg",
+        "car_image_4": "images/2023/03/21/1900155012.jpg",
+        "feature": "Cruise Control,Air Conditioning,Seat Heating,Power Steering,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Bluetooth Handset",
+        "body_style": "Suv",
+        "engine": "6.7-liter turbocharged V8 diesel",
+        "transmission": "Automatic",
+        "interior": "Grey",
+        "miles": 9000,
+        "doors": "3",
+        "passengers": 4,
+        "vin_no": "BWPOa123AJ2I6L",
+        "milage": 2,
+        "fuel_type": "diesel",
+        "no_of_owners": "2",
+        "is_featured": false,
+        "created_date": "2023-03-21T05:15:47Z"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 1,
+    "fields": {
+        "first_name": "Douglous",
+        "last_name": "Mangoyi",
+        "designation": "Co-founder",
+        "image": "images/2023/03/21/Mangoyi.png",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:12:53.413Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 2,
+    "fields": {
+        "first_name": "John",
+        "last_name": "Makori",
+        "designation": "Founder",
+        "image": "images/2023/03/21/john.jpg",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:19:57.718Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 3,
+    "fields": {
+        "first_name": "John",
+        "last_name": "Makori",
+        "designation": "Founder",
+        "image": "images/2023/03/21/reuben.jpg",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:19:57.717Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 4,
+    "fields": {
+        "first_name": "Titus",
+        "last_name": "Mwai",
+        "designation": "Director",
+        "image": "images/2023/03/21/tito_n.jpg",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:30:18.956Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 5,
+    "fields": {
+        "first_name": "Tracy",
+        "last_name": "Orero",
+        "designation": "Manager",
+        "image": "images/2023/03/21/tracy.jpg",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:33:48.851Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 6,
+    "fields": {
+        "first_name": "Jeftha",
+        "last_name": "Mogambi",
+        "designation": "Assistant-manger",
+        "image": "images/2023/03/21/FB_IMG_15471266341273443.jpg",
+        "facebook_link": "https://web.facebook.com",
+        "twitter_link": "https://twitter.com",
+        "created_date": "2023-03-21T03:42:59.753Z",
+        "google_plus_link": "https://google.com"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$390000$SNYhvgQDtSZ6I9NRAlfVBB$XAMpOG1qCxFaIpSHmz7gl8aVvI/b15UOvEsNEEnpFM8=",
+        "last_login": "2023-03-22T12:08:48.106Z",
+        "is_superuser": true,
+        "username": "douglous",
+        "first_name": "",
+        "last_name": "",
+        "email": "douglous@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-03-21T02:58:29.027Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "68le61oby3vspvrsxxayhgch9vd2v8sr",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoOKJL9z0DmWEGqRpISrsy3l2bdKHb_977LxVxXUpcu8xxYnVRVh1-N8L0kLoBvmO9NZ1aXeaJ9KbonXY9NpbndXf_Dgr28q0DcBDKDsjkAGbIR0TrTGD2jA7P4IYsLCcRYAg2ecxCDrxNhiQbr94fAmc47A:1pexGq:rcEZlHfLVjhs7Agz4zrLSTL6M9RJJlCYHwXWGgso6P8",
+        "expire_date": "2023-04-05T12:08:48.120Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zvbuai15lgriori87zkmlbtwp05byk6j",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoOKJL9z0DmWEGqRpISrsy3l2bdKHb_977LxVxXUpcu8xxYnVRVh1-N8L0kLoBvmO9NZ1aXeaJ9KbonXY9NpbndXf_Dgr28q0DcBDKDsjkAGbIR0TrTGD2jA7P4IYsLCcRYAg2ecxCDrxNhiQbr94fAmc47A:1peXYs:vNweHQyXUwUfwEVb8O2KdivWVwnRulBbA3mPxuhvetU",
+        "expire_date": "2023-04-04T08:41:42.568Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "Facebook Login",
+        "client_id": "219848440594581",
+        "secret": "05ac62e104c4ceb69c8db9b984f5e0b9",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "679630290857-aj9bifkrtifqq5osf5oc1gu6956qqv50.apps.googleusercontent.com",
+        "secret": "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",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-03-21T03:12:53.567Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Douglous",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-03-21T03:19:57.990Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "John",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-03-21T03:19:57.989Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "John",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-03-21T03:25:40.474Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "John",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-03-21T03:26:29.226Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "John",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-03-21T03:30:19.120Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "Titus",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-03-21T03:33:48.866Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "5",
+        "object_repr": "Tracy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-03-21T03:42:59.755Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "6",
+        "object_repr": "Jeftha",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-03-21T04:43:20.527Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "2017 Ferrari 488 GTB",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-03-21T04:49:11.602Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "2017 Jaguar F-PACE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-03-21T04:56:03.736Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2018 Toyota 4Runner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-03-21T05:06:07.349Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "2018 Toyota Corolla",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-03-21T05:15:10.551Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-03-21T05:23:00.802Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "6",
+        "object_repr": "2017 Ford F-250 Super Duty",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-03-21T07:45:17.043Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-03-21T07:45:54.626Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost:8000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-03-21T08:03:11.940Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-03-21T08:36:46.721Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "sobei",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-03-21T08:37:03.750Z",
+        "user": [
+            "douglous"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "eric",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]

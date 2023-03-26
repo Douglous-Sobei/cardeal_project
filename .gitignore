@@ -163,7 +163,7 @@ dmypy.json
 cython_debug/
 
 # Project backup
-project_dump.json
+# project_dump.json
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
