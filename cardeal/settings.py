@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from decouple import config
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,8 +27,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = [
-    "carsale.herokuapp.com",
-    "127.0.0.1"
+    "*"
 ]
 
 LOGIN_REDIRECT_URL = "dashboard"
@@ -94,21 +92,21 @@ WSGI_APPLICATION = "cardeal.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "cardeal_db",
-#         "USER": "postgres",
-#         "PASSWORD": "SOBEI",
-#         "HOST": "localhost",
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.config(
-        default=f"postgres://postgres:{config('DATABASE_PASSWORD')}@localhost/cardeal_db"
-    )
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "cardealership",
+        "USER": "sobei",
+        "PASSWORD": "SOBEI2023",
+        "HOST": "cardealer-db.cwgttmagf92f.us-east-1.rds.amazonaws.com",
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=f"postgres://postgres:{config('DATABASE_PASSWORD')}@localhost/cardeal_db"
+#     )
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -161,13 +159,13 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-SITE_ID = 1
+# SITE_ID = 1
 
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "douglousmangoyi@gmail.com"
-EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
-EMAIL_USE_TLS = True
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "douglousmangoyi@gmail.com"
+# EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
+# EMAIL_USE_TLS = True
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
