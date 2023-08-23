@@ -97,7 +97,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "cardealership",
         "USER": "sobei",
-        "PASSWORD": "SOBEI2023",
+        "PASSWORD": config("DATABASE_PASSWORD"),
         "HOST": "cardealer-db.cwgttmagf92f.us-east-1.rds.amazonaws.com",
     }
 }
