@@ -156,6 +156,7 @@ project_dump.json
 
 # Pyre type checker
 .pyre/
+/data
 
 # pytype static type analyzer
 .pytype/
@@ -174,3 +175,6 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+
+Dockerfile
+docker-compose.yml
