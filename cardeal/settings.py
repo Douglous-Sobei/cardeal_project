@@ -23,13 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
 ALLOWED_HOSTS = [
-    "cardealership-production.up.railway.app"  # Add your deployment domain here
+    "cardealership-production.up.railway.app"
 ]
 
 LOGIN_REDIRECT_URL = "dashboard"
@@ -70,6 +70,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
+
 ROOT_URLCONF = "cardeal.urls"
 
 TEMPLATES = [
@@ -108,12 +109,6 @@ DATABASES = {
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=f"postgres://postgres:{config('DATABASE_PASSWORD')}@localhost/cardeal_db"
-#     )
-# }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -132,7 +127,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -143,7 +137,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -157,6 +150,10 @@ STATICFILES_DIRS = [
 # media settings
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://cardealership-production.up.railway.app",
+]
 
 # messages
 
@@ -181,7 +178,6 @@ AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
 
 AWS_STORAGE_BUCKET_NAME = "mangoyi-images"
-
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
