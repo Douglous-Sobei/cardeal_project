@@ -29,7 +29,7 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "cardealership-production.up.railway.app"
+    "*"
 ]
 
 LOGIN_REDIRECT_URL = "dashboard"
