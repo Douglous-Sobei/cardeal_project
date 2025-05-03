@@ -27,7 +27,7 @@ DEBUG= config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "cardealership-production.up.railway.app",
+    "cardealership-project-production.up.railway.app",
     "0.0.0.0"
     ]  # Allow all hosts for development
 
@@ -148,7 +148,8 @@ AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
 
 AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
 # CSRF trusted origins
-CSRF_TRUSTED_ORIGINS = ['https://cardealership-production.up.railway.app']
+
+CSRF_TRUSTED_ORIGINS = ["https://cardealership-project-production.up.railway.app"]
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
