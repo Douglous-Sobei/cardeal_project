@@ -49,7 +49,7 @@ This is a web application built using Django framework for managing and showcasi
 
 ## Deployment
 
-The application is deployed on Railway, providing a scalable and reliable platform for hosting Django applications. You can access the deployed application at [https://cardealership-production.up.railway.app/](https://cardealership-production.up.railway.app/).
+The application is deployed on Railway, providing a scalable and reliable platform for hosting Django applications. You can access the deployed application at [https://cardealership-project-production.up.railway.app/](https://cardealership-project-production.up.railway.app/).
 
 ## Contributors
 
