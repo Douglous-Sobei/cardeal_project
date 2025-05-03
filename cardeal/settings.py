@@ -29,7 +29,8 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "cardealership-project-production.up.railway.app",
     "0.0.0.0"
-    ]  # Allow all hosts for development
+]
+
 
 # Application definition
 INSTALLED_APPS = [

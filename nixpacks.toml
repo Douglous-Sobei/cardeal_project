@@ -1,9 +1,0 @@
-[phases.setup]
-nixpkgs = [
-  "libffi",
-  "pkg-config",
-  "python311Full"
-]
-
-[phases.install]
-cmds = ["pip install --upgrade pip", "pip install -r requirements.txt"]
