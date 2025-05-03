@@ -1,0 +1,2 @@
+[phases.setup]
+nixPkgs = ["libffi", "pkg-config", "gcc", "make"]
