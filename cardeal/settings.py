@@ -28,7 +28,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "cardealership-project-production.up.railway.app",
-    "cardeal-webapp.azurewebsites.net"
+    "cardeal-webapp.azurewebsites.net",
     "0.0.0.0"
 ]
 
