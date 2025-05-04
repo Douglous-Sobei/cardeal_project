@@ -22,12 +22,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG= config("DEBUG", default=False, cast=bool)
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "cardealership-project-production.up.railway.app",
+    "cardeal-webapp.azurewebsites.net"
     "0.0.0.0"
 ]
 
@@ -150,7 +151,8 @@ AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
 # CSRF trusted origins
 
-CSRF_TRUSTED_ORIGINS = ["https://cardealership-project-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://cardealership-project-production.up.railway.app",
+                        "https://cardeal-webapp.azurewebsites.net"]
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

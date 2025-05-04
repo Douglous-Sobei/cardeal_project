@@ -184,7 +184,9 @@ docker-compose.yml
 entrypoint.sh
 init_db.sh
 run.sh
-
+.env.production
+deploy.sh
+deploy_to_azure.sh
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
